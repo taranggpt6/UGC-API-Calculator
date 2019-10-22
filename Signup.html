@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Sign UP</title>
+	<style>
+		body{
+			//margin : 0;
+			width : 100%;
+			background: url("pexels-photo-132037.jpeg") no-repeat fixed;
+			background-size : cover;
+		}
+		.content{
+			width : 1200px;
+			margin : auto;
+			background : white;
+			//height : 1200px;
+			margin-top : 30px;
+			opacity : 0.8;
+			//border : 20px solid white;
+		}
+		h1{
+			text-align : center;
+			background : green;
+			border : 3px solid green;
+			color : white;
+			padding : 30px;
+			font-family : Agency FB;
+			font-size : 62px;
+		}
+		table th{
+			font-size : 20px;
+			color: #111;
+		}
+		input[type="text"],[type="email"],[type="password"]{
+			border: none;
+			border-bottom : 1px solid black;
+		}
+		.sinform{
+			margin-left : 100px;
+		}
+		.submit{
+			padding : 15px;
+			//margin : 100px;
+			background : red;
+			border : 1px solid red;
+			color : white;
+			//margin-left: 300px;
+			//float : right;
+		}
+		.select{
+			border: none;
+			background : red;
+			color : white;
+			border : 3px solid red;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h1><strong><u>Sign UP</u><strong></h1>
+		<div class="sinform">
+			<form action="signupsave.php" method="POST">	
+				<table cellpadding="30">
+					<tr><th>First Name</th><td><input type="text" placeholder="First Name" name="fname"></td><th>Last Name</th><td><input type="text" placeholder="Last Name" name="lname"></td></tr>
+					<tr><th>Gender</th><td><input type="radio" name="gender" value="Male">Male</td><td><input type="radio" name="gender" value="Female">Female</td></tr>
+					<tr><th>Username</th><td><input type="text" placeholder="Unique Username" name="username"></td></tr>
+					<tr><th>Create Password</th><td><input type="password" placeholder="Password" name="password"></td></tr>
+					<tr><th>Confirm Password</th><td><input type="password" placeholder="Password" name="conpassword"></td></tr>
+					<tr><th>E-mail</th><td><input type="email" placeholder="E-mail Address" name="email"></td><th>Contact No.</th><td><input type="text"  placeholder="+91" maxlength="10" name="ctno"></td></tr>
+					<tr><th>Country</th><td><input type="text" placeholder="Country" name="country"></td></tr>
+					<tr><th>College</th><td><input type="text" placeholder="College" name="college"></td><th></tr>
+					<tr><td><center><input type="submit" value="Sign Up" class="submit"></center></td></tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

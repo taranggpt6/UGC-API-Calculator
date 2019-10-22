@@ -1,0 +1,182 @@
+<html>
+<head>
+	<title>Login</title>
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+	<style>
+		body{
+			background: url("pexels-photo-132037.jpeg");
+			background-size : 100%;
+			//filter : blur(35px);
+			margin : 0px;
+		}
+		.leftside{
+			//background : red;
+			float : left;
+			width: 50%;
+			height : 100%;
+			opacity : 0.2;
+			margin : auto;
+			//background : rgba(0,0,0,5);
+			//position : relative;
+		}
+		.rightside{
+			float : right;
+			background : black;
+			width: 50%;
+			height : 100%;
+			opacity : 0.5;
+		}
+		
+		.img{
+			//background : #ccc;
+			padding-left : 80px;
+			width : 200px;
+			height: 200px;
+			margin : 200px;
+			//opacity : 0%;
+		}
+		.image{
+			border-radius:50%;
+			width : 200px;
+			position : absolute;
+			//background : rgba(0,0,0,10);
+			background : red;
+			//opacity : 0.9;
+			//filter : contrast(80%);
+			//filter : brightness(80%);
+		}
+		
+		.content{
+			margin : 20px;
+		}
+		
+		.loginform input[type="text"],input[type="password"]{
+			width : 100%;
+			border : none;
+			border-bottom : 1px solid #111;
+			//background : transparent;
+		}
+		.loghead{
+			margin : 0px;
+			background : #ccc;
+			padding : 10px;
+			font-family : Times New Roman;
+		}
+		.logicon{
+			margin : 115px;
+			width : 180px;
+			margin-left : 350px;
+			//padding-left : 170px;
+			//background : red;
+			//position : relative;
+			position : absolute;
+			
+		}
+		.logimg{
+			//padding-left : 70px;
+			//margin : 10px;
+			//opacity : 0.9;
+		}
+		
+		
+		.loginform{
+			background : white;
+			border-radius : 20px;
+			border : 2px solid blue;
+			//margin-top : -200px;
+			padding : 30px 90px;
+			height : 300px;
+			position : relative;
+			position : absolute;
+			top : 260px;
+			margin-left : 170px;
+			opacity : 0.8;
+		}
+		
+		.button {
+			//background : black;
+			padding-left : 80px;
+		}
+		.but{
+			padding : 9px 18px;
+			background : red;
+			border : 2px solid red;
+			color : white;
+		}
+		.forgotpass{
+			float : right;
+		}
+		.welcome{
+		//	background : yellow;
+			position : absolute;
+			height :200px;
+			margin-top  : -180px;
+			padding-left : 230px;
+			width : 72%;
+			height : 50px;
+			//margin : auto;
+			//color: green;
+			//opacity : 0.3;
+		}
+		.welcome h2{
+			font-size : 32px;
+			//font-family : sans-serif;
+		}
+		.signup{
+			margin : 0px;
+			//background : #ccc;
+			padding : 0.05px;
+		}
+		.butsin{
+				background : green;
+				padding : 9px 16px;
+				border : 2px solid green;
+				text-decoration : none;
+				color : white;
+		}
+		.butsin:hover{
+				opacity : 0.6;
+		}	
+	</style>
+</head>
+<body>
+	<div class="leftside">
+			<div class="img">
+				<img src = "dreamstimeextrasmall_31679295.jpg" class="image">
+			</div>
+			<div class="welcome">
+				<h2><font color="white">TamTech</font><font color="white"> Solutions</font></h2>
+			</div>
+	</div>
+	
+	<div class="rightside">
+		<div class="content">
+	<!--Login Header Image-->
+				<div class="logicon"> 
+						<img src ="login-icon-3047.png"  width="150px" height="150px"class="logimg">
+				</div>
+		<form action="login.php" method=POST>
+			<div class="loginform">
+				<h2 class="loghead"><center>Login</center></h2><hr>
+				<table cellpadding="20">
+					<tr><th><label><b>Username</b></label></th><th><input type="text" size="22" name="username" placeholder="Enter Username" class="input-type"></th><tr>
+					<tr><th><label><b>Password</b></label></th><td><input type="password" size="22" name="password" placeholder="Password"class="input-type"></td><tr>
+				</table>
+				<div class="button">
+					<table>
+						<tr><th><input type="submit" class="but" value="Login"></th>
+							<div class="forgotpass">
+								<a href="#">Forgot Password</a></td></tr>
+							</div>
+					</table>
+				</div><hr>
+					<div class="signup">
+						<tr><td><p><center><strong>Get a New Account</strong>&nbsp &nbsp &nbsp <a href="Signup.html"> <input type="button" value="Signup" class="butsin"></a></center></p></td></tr>
+					</div>	
+			</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
+
